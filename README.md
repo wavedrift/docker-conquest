@@ -6,7 +6,6 @@ Docker container implementing version 1.4.17d of the [ConQuest DICOM server].
 ### About
 This is a Docker-ised version of the fabulous ConQuest DICOM Server, built on top of a base Ubuntu 14.04 LTS (Trusty Tahr) image.  Another version based on Ubuntu 16.04 (Xenial Xerus) will also be implemented after its release.
 
-
 ### Installation
 ##### Option 1: Download from Docker Hub
 All updates to this repository are automatically built on the associated Docker Hub page: [docker-conquest]
@@ -20,10 +19,12 @@ $ sudo docker pull wavedrift/docker-conquest
 
 
 ##### Option 2: Build locally using Docker
-If you want to build from the Dockerfile, simply copy this to a folder on your local machine, open a terminal in that folder and type:
+If you want to build from the Dockerfile, clone the [docker-conquest github repository] to your local machine, open a terminal in that folder and type:
 ```sh
 $ sudo docker build -t docker-conquest .
 ```
+
+[docker-conquest github repository]: <https://github.com/wavedrift/docker-conquest>
 
 ### Running
 To run the Docker image, simply run:
