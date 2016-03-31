@@ -32,10 +32,7 @@ $ sudo docker run -p 5678:5678 -p 80:80 docker-conquest
 ```
 Note that this will bind ports 5678 and 80 in the Docker container to the same ports on the host.  Change these if you want them bound elsewhere.
 
-The ConQuest web interface is then accessible by opening a web browser and navigating to:
-```sh
-localhost/cgi-bin/dgate
-```
+The ConQuest web interface is then accessible by opening a web browser and navigating to `http://localhost/cgi-bin/dgate`.
 
 ### Ports
 The following ports on the container are exposed for you to bind to: 
