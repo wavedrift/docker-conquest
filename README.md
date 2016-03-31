@@ -6,16 +6,36 @@ Docker container implementing version 1.4.17d of the [ConQuest DICOM server].
 ### About
 This is a Docker-ised version of the fabulous ConQuest DICOM Server, built on top of a base Ubuntu 14.04 LTS (Trusty Tahr) image.  Another version based on Ubuntu 16.04 (Xenial Xerus) will also be implemented after its release.
 
+
 ### Installation
+##### Option 1: Download from Docker Hub
+All updates to this repository are automatically built on the associated Docker Hub page: [docker-conquest]
+
+[docker-conquest]: <https://hub.docker.com/r/wavedrift/docker-conquest/>
+
+To pull this directly from Docker Hub, simply run:
+```sh
+$ sudo docker pull wavedrift/docker-conquest
+```
+
+
+##### Option 2: Build locally using Docker
 If you want to build from the Dockerfile, simply copy this to a folder on your local machine, open a terminal in that folder and type:
 ```sh
 $ sudo docker build -t docker-conquest .
 ```
-Then, to run the Docker image, simply run:
+
+### Running
+To run the Docker image, simply run:
 ```sh
 $ sudo docker run -p 5678:5678 -p 80:80 docker-conquest
 ```
 Note that this will bind ports 5678 and 80 in the Docker container to the same ports on the host.  Change these if you want them bound elsewhere.
+
+The ConQuest web interface is then accessible by opening a web browser and navigating to:
+```sh
+localhost/cgi-bin/dgate
+```
 
 ### Ports
 The following ports on the container are exposed for you to bind to: 
