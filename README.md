@@ -46,7 +46,7 @@ The following ports on the container are exposed for you to bind to:
 MIT Licence for Dockerfile.
 ConQuest DICOM server is licensed separately (see [LICENSE] file).
 
-[LICENSE]: <LICENSE>
+[LICENSE]: <https://github.com/wavedrift/docker-conquest/blob/master/LICENSE>
 
 ### Issues
 Please report any issues and I'll get to them ASAP.
